@@ -2,7 +2,7 @@
 cmake_minimum_required(VERSION 3.5 FATAL_ERROR)
 
 # project name, in this case no language required
-project(recipe-01 LANGUAGES NONE)
+project(ch02-recipe01 LANGUAGES NONE)
 
 # print custom message depending on the operating system
 if(CMAKE_SYSTEM_NAME STREQUAL "Linux")
