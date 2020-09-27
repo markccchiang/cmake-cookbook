@@ -26,6 +26,9 @@ add_subdirectory(chapter-02/recipe-05/cxx-example)
 add_subdirectory(chapter-02/recipe-06/cxx-example)
 
 # Chapter 3
-# recipe-01 ~ recipe-05: Python embedding and Fortran embedding
+# recipe-01 ~ recipe-03: Python embedding
+# recipe-04: Fortran embedding
 add_subdirectory(chapter-03/recipe-05/cxx-example)
 add_subdirectory(chapter-03/recipe-05/cxx-example-3.5)
+# recipe-06: MPI
+add_subdirectory(chapter-03/recipe-07/cxx-example)
