@@ -2,7 +2,7 @@
 cmake_minimum_required(VERSION 3.5 FATAL_ERROR)
 
 # project name and language
-project(recipe-08 LANGUAGES CXX)
+project(ch01-recipe08 LANGUAGES CXX)
 
 message("C++ compiler flags: ${CMAKE_CXX_FLAGS}")
 
@@ -28,11 +28,11 @@ target_compile_options(geometry
     ${flags}
   )
 
-add_executable(compute-areas compute-areas.cpp)
+add_executable(ch01-recipe08-cpp compute-areas.cpp)
 
-target_compile_options(compute-areas
+target_compile_options(ch01-recipe08-cpp
   PRIVATE
     "-fPIC"
   )
 
-target_link_libraries(compute-areas geometry)
+target_link_libraries(ch01-recipe08-cpp geometry)
