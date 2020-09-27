@@ -32,3 +32,4 @@ add_subdirectory(chapter-03/recipe-05/cxx-example)
 add_subdirectory(chapter-03/recipe-05/cxx-example-3.5)
 # recipe-06: MPI
 add_subdirectory(chapter-03/recipe-07/cxx-example)
+add_subdirectory(chapter-03/recipe-07/cxx-example-3.5)
