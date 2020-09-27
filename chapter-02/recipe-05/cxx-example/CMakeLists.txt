@@ -2,19 +2,19 @@
 cmake_minimum_required(VERSION 3.10 FATAL_ERROR)
 
 # project name and language
-project(recipe-05 LANGUAGES CXX)
+project(ch02-recipe05 LANGUAGES CXX)
 
 # define executable
-add_executable(processor-info "")
+add_executable(ch02-recipe05-cpp "")
 
 # and its source file
-target_sources(processor-info
+target_sources(ch02-recipe05-cpp
   PRIVATE
     processor-info.cpp
   )
 
 # and its include directories
-target_include_directories(processor-info
+target_include_directories(ch02-recipe05-cpp
   PRIVATE
     ${PROJECT_BINARY_DIR}
   )
