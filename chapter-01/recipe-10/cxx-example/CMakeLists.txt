@@ -2,9 +2,9 @@
 cmake_minimum_required(VERSION 3.5 FATAL_ERROR)
 
 # project name and language
-project(recipe-10 LANGUAGES CXX)
+project(ch01-recipe10 LANGUAGES CXX)
 
-add_library(geometry
+add_library(ch01-recipe10-geometry
   STATIC
     geometry_circle.cpp
     geometry_circle.hpp
@@ -17,7 +17,7 @@ add_library(geometry
   )
 
 # we wish to compile the library with the optimization flag: -O3
-target_compile_options(geometry
+target_compile_options(ch01-recipe10-geometry
   PRIVATE
     -O3
   )
@@ -43,6 +43,6 @@ foreach(_source ${sources_with_lower_optimization})
   message(STATUS "Source ${_source} has the following extra COMPILE_FLAGS: ${_flags}")
 endforeach()
 
-add_executable(compute-areas compute-areas.cpp)
+add_executable(ch01-recipe10-cpp compute-areas.cpp)
 
-target_link_libraries(compute-areas geometry)
+target_link_libraries(ch01-recipe10-cpp ch01-recipe10-geometry)
