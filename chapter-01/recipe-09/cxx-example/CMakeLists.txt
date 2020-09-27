@@ -2,7 +2,7 @@
 cmake_minimum_required(VERSION 3.5 FATAL_ERROR)
 
 # project name and language
-project(recipe-09 LANGUAGES CXX)
+project(ch01-recipe09 LANGUAGES CXX)
 
 set(CMAKE_WINDOWS_EXPORT_ALL_SYMBOLS ON)
 
@@ -25,13 +25,13 @@ set_target_properties(animals
     POSITION_INDEPENDENT_CODE 1
   )
 
-add_executable(animal-farm animal-farm.cpp)
+add_executable(ch01-recipe09-cpp animal-farm.cpp)
 
-set_target_properties(animal-farm
+set_target_properties(ch01-recipe09-cpp
   PROPERTIES
     CXX_STANDARD 14
     CXX_EXTENSIONS OFF
     CXX_STANDARD_REQUIRED ON
   )
 
-target_link_libraries(animal-farm animals)
+target_link_libraries(ch01-recipe09-cpp animals)
