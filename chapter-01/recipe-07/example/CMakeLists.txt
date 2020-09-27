@@ -2,7 +2,7 @@
 cmake_minimum_required(VERSION 3.5 FATAL_ERROR)
 
 # project name and language
-project(recipe-07 LANGUAGES C CXX)
+project(ch01-recipe07 LANGUAGES C CXX)
 
 # we default to Release build type
 if(NOT CMAKE_BUILD_TYPE)
