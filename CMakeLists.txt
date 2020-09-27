@@ -19,3 +19,4 @@ add_subdirectory(chapter-01/recipe-10/cxx-example)
 
 # Chapter 2
 add_subdirectory(chapter-02/recipe-01/example)
+add_subdirectory(chapter-02/recipe-02/cxx-example)
