@@ -2,17 +2,17 @@
 cmake_minimum_required(VERSION 3.5 FATAL_ERROR)
 
 # project name and language
-project(recipe-04 LANGUAGES CXX)
+project(ch02-recipe04 LANGUAGES CXX)
 
 # define executable and its source file
-add_executable(arch-dependent arch-dependent.cpp)
+add_executable(ch02-recipe04-cpp arch-dependent.cpp)
 
 # let the preprocessor know about the size of void *
 if(CMAKE_SIZEOF_VOID_P EQUAL 8)
-  target_compile_definitions(arch-dependent PUBLIC "IS_64_BIT_ARCH")
+  target_compile_definitions(ch02-recipe04-cpp PUBLIC "IS_64_BIT_ARCH")
   message(STATUS "Target is 64 bits")
 else()
-  target_compile_definitions(arch-dependent PUBLIC "IS_32_BIT_ARCH")
+  target_compile_definitions(ch02-recipe04-cpp PUBLIC "IS_32_BIT_ARCH")
   message(STATUS "Target is 32 bits")
 endif()
 
@@ -27,6 +27,6 @@ else()
   message(STATUS "host processor architecture is unknown")
 endif()
 
-target_compile_definitions(arch-dependent
+target_compile_definitions(ch02-recipe04-cpp
   PUBLIC "ARCHITECTURE=${CMAKE_HOST_SYSTEM_PROCESSOR}"
   )
