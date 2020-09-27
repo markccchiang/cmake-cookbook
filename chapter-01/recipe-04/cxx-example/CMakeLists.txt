@@ -2,7 +2,7 @@
 cmake_minimum_required(VERSION 3.5 FATAL_ERROR)
 
 # project name and language
-project(recipe-04 LANGUAGES CXX)
+project(ch01-recipe04 LANGUAGES CXX)
 
 # introduce a toggle for using a library
 set(USE_LIBRARY OFF)
@@ -21,9 +21,9 @@ if(USE_LIBRARY)
   # since BUILD_SHARED_LIBS is OFF
   add_library(message ${_sources})
 
-  add_executable(hello-world hello-world.cpp)
+  add_executable(ch01-recipe04-cpp hello-world.cpp)
 
-  target_link_libraries(hello-world message)
+  target_link_libraries(ch01-recipe04-cpp message)
 else()
-  add_executable(hello-world hello-world.cpp ${_sources})
+  add_executable(ch01-recipe04-cpp hello-world.cpp ${_sources})
 endif()
