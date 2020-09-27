@@ -34,3 +34,9 @@ add_subdirectory(chapter-03/recipe-05/cxx-example-3.5)
 add_subdirectory(chapter-03/recipe-07/cxx-example)
 add_subdirectory(chapter-03/recipe-07/cxx-example-3.5)
 add_subdirectory(chapter-03/recipe-08/cxx-example)
+# recipe-09: PkgConfig, libzeromq, libzmq, lib0mq
+# recipe-10: ZeroMQ
+
+# Chapter 4
+# recipe-01: PythonInterp, BASH_EXECUTABLE
+add_subdirectory(chapter-04/recipe-02/cxx-example)
