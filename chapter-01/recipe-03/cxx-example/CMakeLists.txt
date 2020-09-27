@@ -2,7 +2,7 @@
 cmake_minimum_required(VERSION 3.5 FATAL_ERROR)
 
 # project name and language
-project(recipe-03 LANGUAGES CXX)
+project(ch01-recipe03 LANGUAGES CXX)
 
 # generate a library from sources
 add_library(message
@@ -11,6 +11,5 @@ add_library(message
     Message.cpp
   )
 
-add_executable(hello-world hello-world.cpp)
-
-target_link_libraries(hello-world message)
+add_executable(ch01-recipe03-cpp-01 hello-world.cpp)
+target_link_libraries(ch01-recipe03-cpp-01 message)
