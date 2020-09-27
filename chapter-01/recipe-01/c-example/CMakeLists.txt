@@ -2,6 +2,6 @@
 cmake_minimum_required(VERSION 3.5 FATAL_ERROR)
 
 # project name and language
-project(recipe-01 LANGUAGES C)
+project(ch01-recipe01 LANGUAGES C)
 
-add_executable(recipe-01-c hello-world.c)
+add_executable(ch01-recipe01-c hello-world.c)
