@@ -2,7 +2,7 @@
 cmake_minimum_required(VERSION 3.5 FATAL_ERROR)
 
 # project name and language
-project(recipe-05 LANGUAGES CXX)
+project(ch01-recipe05 LANGUAGES CXX)
 
 # expose options to the user
 option(USE_LIBRARY "Compile sources into a library" OFF)
@@ -35,18 +35,18 @@ if(USE_LIBRARY)
   if(MAKE_SHARED_LIBRARY)
     add_library(message SHARED ${_sources})
 
-    add_executable(hello-world hello-world.cpp)
+    add_executable(ch01-recipe05-cpp hello-world.cpp)
 
-    target_link_libraries(hello-world message)
+    target_link_libraries(ch01-recipe05-cpp message)
   endif()
 
   if(MAKE_STATIC_LIBRARY)
     add_library(message STATIC ${_sources})
 
-    add_executable(hello-world hello-world.cpp)
+    add_executable(ch01-recipe05-cpp hello-world.cpp)
 
-    target_link_libraries(hello-world message)
+    target_link_libraries(ch01-recipe05-cpp message)
   endif()
 else()
-  add_executable(hello-world hello-world.cpp ${_sources})
+  add_executable(ch01-recipe05-cpp hello-world.cpp ${_sources})
 endif()
